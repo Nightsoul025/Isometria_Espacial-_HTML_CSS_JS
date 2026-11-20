@@ -2435,7 +2435,14 @@ body {
   font-size: 16px;
 }
 .section-intro,
+.intro-band p,
 .concept-card > p,
+.key-facts,
+.technical-note p,
+.science-figure figcaption,
+.image-dialog-caption,
+.hero-visual-caption,
+.student-strip span:last-child,
 .axis-heading > p:last-child,
 .fat-explanation p,
 .regulation-copy p,
@@ -2448,8 +2455,11 @@ body {
 .reference-disclaimer,
 .thalidomide-fact > p:not(.mini-index),
 .history-step p,
+.thalidomide-footer p,
 .ibuprofen-heading p,
+.ibuprofen-footnote,
 .enantiomer-box p,
+.conversion-fact span,
 .scent-profile p,
 .plant-profile small,
 .file-card p,
@@ -2457,5 +2467,5 @@ body {
 .reference-list li div,
 .reference-list em,
 .footer-inner span:last-child {
-  font-size: 12px;
+  font-size: 14px;
 }
