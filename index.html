@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090f16">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Investigação científica sobre isomeria espacial: geometria cis/trans, quiralidade, gorduras trans, talidomida, ibuprofeno, limoneno e carvona.">
+  <title>Isomeria espacial no nosso cotidiano | Dossiê de Química</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Serif+Display:ital@0;1&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Isomeria espacial — início">
+        <img
+          class="brand-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Discovery_science.png"
+          alt="Logotipo Discovery Science"
+          width="160"
+          height="60"
+        >
+        <span class="brand-fallback" aria-hidden="true" hidden>DISCOVERY <strong>SCIENCE</strong></span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-project">DOSSIÊ<br>DE QUÍMICA</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#fundamentos">Fundamentos</a>
+        <a href="#gorduras">Gorduras</a>
+        <a href="#farmacos">Fármacos</a>
+        <a href="#aromas">Aromas</a>
+        <a class="nav-quiz" href="#quiz">Quiz</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">☼</span>
+        <span class="theme-toggle-label">Tema claro</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> QUÍMICA ORGÂNICA · ESTEREOQUÍMICA APLICADA</p>
+          <h1 id="hero-title">Isomeria espacial <em>no nosso cotidiano</em></h1>
+          <p class="hero-lead">Mesmas conexões entre átomos. Diferente organização tridimensional. Efeitos que podem mudar a textura de um alimento, a ação de um medicamento e até o aroma de uma planta.</p>
+          <a class="hero-cta" href="#fundamentos">Investigar o tema <span aria-hidden="true">↘</span></a>
+        </div>
+
+        <div class="hero-visual" aria-label="Modelos moleculares reais de limoneno e talidomida">
+          <div class="hero-visual-top">
+            <span>ESTEREOQUÍMICA EM 3D</span>
+            <span class="live-dot">MODELOS MOLECULARES</span>
+          </div>
+          <div class="hero-model-grid">
+            <figure class="hero-model hero-model-main">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Limonene-3D-balls.png" alt="Modelo molecular tridimensional do limoneno em representação de bolas e varetas; carbono em preto e hidrogênio em branco." width="630" height="1100" fetchpriority="high" decoding="async">
+              <figcaption><strong>LIMONENO</strong><span>C₁₀H₁₆ · molécula quiral</span><a href="https://commons.wikimedia.org/wiki/File:Limonene-3D-balls.png" target="_blank" rel="noopener noreferrer">origem da imagem ↗</a></figcaption>
+            </figure>
+            <figure class="hero-model hero-model-secondary">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/S-Thalidomide-3D-balls.png" alt="Modelo tridimensional de bolas e varetas do enantiômero S da talidomida, com átomos de carbono, hidrogênio, oxigênio e nitrogênio identificados por cores." width="2119" height="1000" decoding="async">
+              <figcaption><strong>S-TALIDOMIDA</strong><span>centro estereogênico</span><a href="https://commons.wikimedia.org/wiki/File:S-Thalidomide-3D-balls.png" target="_blank" rel="noopener noreferrer">origem da imagem ↗</a></figcaption>
+            </figure>
+          </div>
+          <p class="hero-visual-caption">A mesma conectividade pode produzir organizações tridimensionais diferentes.</p>
+          <span class="visual-index">ISOMERIA / 3D</span>
+        </div>
+
+        <div class="student-strip">
+          <div><span class="strip-label">INSTITUIÇÃO</span><strong>E.E.E.M. Willy Carlos Fröhlich</strong><span>Santa Cruz do Sul — RS</span></div>
+          <div><span class="strip-label">PESQUISA</span><strong>Arthur Santos Lopes</strong><span>Turma 302</span></div>
+          <div class="strip-year"><span class="strip-label">ÁREA</span><strong>Química</strong><span>Ensino Médio</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Objetivo da investigação">
+      <div class="section-shell intro-band-inner">
+        <span class="section-index">CONTEXTO / 00</span>
+        <p>O objetivo desta investigação é compreender como diferenças de orientação espacial — sem alterar as ligações entre os átomos — repercutem na medicina, na alimentação e na percepção de aromas.</p>
+        <span class="intro-source">Base: enunciado da atividade de pesquisa</span>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="fundamentos" aria-labelledby="fundamentos-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">01 / BASE TEÓRICA</p>
+          <h2 id="fundamentos-title">A diferença está no espaço.</h2>
+        </div>
+        <p class="section-intro">Na isomeria espacial, os átomos mantêm a mesma conectividade, mas ocupam posições diferentes no espaço. Essa organização pode alterar propriedades físicas, interações biológicas e percepção sensorial.</p>
+      </div>
+
+      <div class="concept-grid">
+        <article class="concept-card concept-geometry">
+          <div class="card-topline"><span>01A</span><span>GEOMETRIA</span></div>
+          <h3>Cis e trans</h3>
+          <p>Surge quando a rotação é impedida, como em uma ligação dupla carbono-carbono ou em certos anéis. Para distinguir cis/trans em uma dupla ligação, cada carbono da dupla precisa estar ligado a dois grupos diferentes; então comparamos a posição dos grupos de referência.</p>
+          <div class="geometry-diagram">
+            <div class="isomer-drawing">
+              <svg viewBox="0 0 300 150" role="img" aria-labelledby="cis-title cis-desc">
+                <title id="cis-title">Representação esquemática do isômero cis</title>
+                <desc id="cis-desc">Dois carbonos ligados por uma ligação dupla. Os grupos R estão do mesmo lado da ligação dupla e os hidrogênios no lado oposto.</desc>
+                <g stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none">
+                  <path d="M112 72 L188 72 M112 80 L188 80 M105 69 L68 28 M195 69 L232 28 M105 84 L68 126 M195 84 L232 126" />
+                </g>
+                <g fill="currentColor" font-size="17" font-weight="700" text-anchor="middle">
+                  <text x="104" y="85">C</text><text x="196" y="85">C</text>
+                  <text x="55" y="25">R</text><text x="245" y="25">R</text>
+                  <text x="53" y="145">H</text><text x="247" y="145">H</text>
+                </g>
+                <path d="M35 11 H265" stroke="#ef9d32" stroke-width="1.5" stroke-dasharray="4 5" />
+              </svg>
+              <strong>CIS</strong>
+              <span>Grupos de referência no mesmo lado</span>
+            </div>
+            <div class="isomer-drawing">
+              <svg viewBox="0 0 300 150" role="img" aria-labelledby="trans-title trans-desc">
+                <title id="trans-title">Representação esquemática do isômero trans</title>
+                <desc id="trans-desc">Dois carbonos ligados por uma ligação dupla. Um grupo R está acima e o outro abaixo da ligação dupla.</desc>
+                <g stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none">
+                  <path d="M112 72 L188 72 M112 80 L188 80 M105 69 L68 28 M195 84 L232 126 M105 84 L68 126 M195 69 L232 28" />
+                </g>
+                <g fill="currentColor" font-size="17" font-weight="700" text-anchor="middle">
+                  <text x="104" y="85">C</text><text x="196" y="85">C</text>
+                  <text x="55" y="25">R</text><text x="245" y="145">R</text>
+                  <text x="53" y="145">H</text><text x="247" y="25">H</text>
+                </g>
+                <path d="M35 11 H265" stroke="#ef9d32" stroke-width="1.5" stroke-dasharray="4 5" />
+              </svg>
+              <strong>TRANS</strong>
+              <span>Grupos de referência em lados opostos</span>
+            </div>
+          </div>
+          <p class="diagram-note">Esquema didático de uma cadeia com ligação dupla. R representa um grupo carbônico; H representa hidrogênio.</p>
+        </article>
+
+        <article class="concept-card concept-optical">
+          <div class="card-topline"><span>01B</span><span>QUIRALIDADE</span></div>
+          <h3>Isomeria óptica</h3>
+          <p>Um carbono quiral (ou assimétrico), em um caso comum, está ligado a quatro grupos diferentes. A molécula pode existir em duas formas que são imagens no espelho, mas não se sobrepõem perfeitamente.</p>
+          <div class="mirror-diagram" aria-label="Analogia entre mão esquerda e mão direita para representar formas quirais">
+            <div class="mirror-object">
+              <span class="mirror-symbol" aria-hidden="true">L</span>
+              <strong>FORMA A</strong>
+              <small>imagem no espelho</small>
+            </div>
+            <div class="mirror-divider"><span>↔</span><i></i></div>
+            <div class="mirror-object mirror-object-right">
+              <span class="mirror-symbol" aria-hidden="true">R</span>
+              <strong>FORMA B</strong>
+              <small>não sobreponível</small>
+            </div>
+          </div>
+          <ul class="key-facts">
+            <li><strong>Enantiômeros:</strong> par de imagens especulares não sobreponíveis.</li>
+            <li><strong>Atividade óptica:</strong> capacidade de desviar o plano da luz polarizada.</li>
+            <li><strong>Atenção:</strong> R/S descreve configuração; (+)/(−) indica o sentido de rotação. Não existe equivalência universal entre os dois sistemas.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="technical-note">
+        <span class="note-symbol" aria-hidden="true">i</span>
+        <p><strong>Como interpretar os desenhos:</strong> as figuras são modelos esquemáticos para comparar posições. Não substituem modelos moleculares tridimensionais nem atribuem configuração R/S a uma molécula específica.</p>
+      </div>
+    </section>
+
+    <section class="axis-section" id="gorduras" aria-labelledby="gorduras-title">
+      <div class="section-shell">
+        <div class="axis-heading">
+          <p class="eyebrow">02 / EIXO 1</p>
+          <span class="axis-number">01</span>
+          <h2 id="gorduras-title">A geometria que chega ao prato.</h2>
+          <p>Gorduras cis e trans: uma mudança na disposição espacial dos átomos que alterou a tecnologia de alimentos e se tornou uma questão de saúde pública.</p>
+        </div>
+
+        <div class="fat-layout">
+          <figure class="fat-visual science-figure">
+            <div class="figure-topline"><span>FIGURA 01</span><span>ISOMERIA GEOMÉTRICA</span></div>
+            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/10/cis-trans.jpg" alt="Comparação das estruturas dos ácidos oleico, na configuração cis, com cadeia dobrada, e elaídico, na configuração trans, com cadeia mais linear. Ambos têm fórmula molecular C18H34O2." width="512" height="512" loading="lazy" decoding="async">
+            <figcaption>Ácido oleico (cis) e ácido elaídico (trans): mesma fórmula molecular, mas disposição diferente ao redor da ligação dupla. <a href="https://mundoeducacao.uol.com.br/quimica/isomeria-espacial.htm" target="_blank" rel="noopener noreferrer">Fonte da imagem: Mundo Educação ↗</a></figcaption>
+            <button class="zoom-image-btn" type="button" data-image-viewer="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/10/cis-trans.jpg" data-image-alt="Comparação entre ácido oleico cis e ácido elaídico trans." data-image-caption="Ácido oleico (cis) e ácido elaídico (trans). Fonte: Mundo Educação.">Ampliar figura <span aria-hidden="true">↗</span></button>
+          </figure>
+
+          <div class="fat-explanation">
+            <article>
+              <span class="mini-index">A / ESTRUTURA</span>
+              <h3>O que muda?</h3>
+              <p>Em uma dupla ligação <em>cis</em>, os segmentos da cadeia ficam do mesmo lado e formam uma dobra. Na configuração <em>trans</em>, ficam em lados opostos e a cadeia tende a ser mais reta, permitindo maior aproximação entre moléculas. Em muitos ácidos graxos insaturados de óleos vegetais naturais, a configuração predominante é <em>cis</em>.</p>
+            </article>
+            <article>
+              <span class="mini-index">B / PROCESSO INDUSTRIAL</span>
+              <h3>Por que hidrogenar parcialmente?</h3>
+              <p>A hidrogenação parcial modifica parte das duplas ligações dos óleos. O processo foi usado para obter gorduras mais firmes, melhorar textura e sabor, prolongar o tempo de prateleira e aumentar a estabilidade oxidativa durante o armazenamento. Essas vantagens comerciais e tecnológicas explicam o uso industrial histórico; durante o processo, parte das ligações pode mudar de <em>cis</em> para <em>trans</em>. <a class="text-link" href="#ref-ufrgs">Referência acadêmica da UFRGS <span aria-hidden="true">↗</span></a></p>
+            </article>
+            <article>
+              <span class="mini-index">C / SAÚDE PÚBLICA</span>
+              <h3>Qual é o impacto no organismo?</h3>
+              <p>Não é correto resumir o problema dizendo que o corpo é incapaz de digerir a gordura trans. A evidência sanitária destaca seus efeitos metabólicos: ela reduz o HDL, eleva o LDL e aumenta marcadores associados à inflamação e à disfunção endotelial, elevando o risco cardiovascular.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="regulation-panel">
+          <div class="regulation-stamp">ANVISA<br><strong>RDC<br>632/2022</strong></div>
+          <div class="regulation-copy">
+            <p class="eyebrow eyebrow-dark">REGRA BRASILEIRA · VIGENTE</p>
+            <h3>O que mudou no Brasil?</h3>
+            <p>Desde <strong>1º de janeiro de 2023</strong>, é proibida a produção, importação, uso e oferta de óleos e gorduras parcialmente hidrogenados para uso em alimentos, assim como de alimentos que contenham esses ingredientes.</p>
+            <p>Para óleos refinados destinados ao consumo humano, o limite é de <strong>2 g de gorduras trans industriais por 100 g de gordura total</strong>. Esse limite específico não é um teto geral de 2% para todos os alimentos industrializados. Pequenas quantidades de gorduras trans naturais também podem ocorrer em alimentos derivados de ruminantes.</p>
+            <a class="text-link" href="#ref-anvisa-gorduras">Consultar documento técnico da ANVISA <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="regulation-side"><strong>2023</strong><span>início da proibição dos óleos e gorduras parcialmente hidrogenados</span><strong>2 g / 100 g</strong><span>limite em óleos refinados, por massa de gordura total</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="axis-section medicine-section" id="farmacos" aria-labelledby="farmacos-title">
+      <div class="section-shell">
+        <div class="axis-heading">
+          <p class="eyebrow">03 / EIXO 2</p>
+          <span class="axis-number">02</span>
+          <h2 id="farmacos-title">Quando o espelho encontra o corpo.</h2>
+          <p>Receptores, enzimas e outras estruturas biológicas também possuem formas tridimensionais específicas. Por isso, enantiômeros podem apresentar atividades diferentes no organismo.</p>
+        </div>
+
+        <div class="thalidomide-card">
+          <div class="thalidomide-title">
+            <span class="case-tag">CASO HISTÓRICO / 1950—1960</span>
+            <h3>Talidomida: uma tragédia que mudou a segurança dos medicamentos.</h3>
+            <figure class="thalidomide-model science-figure">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/S-Thalidomide-3D-balls.png" alt="Modelo tridimensional em bolas e varetas da S-talidomida; carbono em preto, hidrogênio em branco, oxigênio em vermelho e nitrogênio em azul." width="2119" height="1000" loading="lazy" decoding="async">
+              <figcaption>Modelo 3D do enantiômero S. Imagem: Jynto / Wikimedia Commons (CC0). <a href="https://commons.wikimedia.org/wiki/File:S-Thalidomide-3D-balls.png" target="_blank" rel="noopener noreferrer">Ver licença e arquivo ↗</a></figcaption>
+              <button class="zoom-image-btn" type="button" data-image-viewer="https://upload.wikimedia.org/wikipedia/commons/0/08/S-Thalidomide-3D-balls.png" data-image-alt="Modelo molecular tridimensional da S-talidomida." data-image-caption="S-talidomida — modelo molecular de bolas e varetas. Jynto / Wikimedia Commons, CC0.">Ampliar modelo <span aria-hidden="true">↗</span></button>
+            </figure>
+          </div>
+          <div class="thalidomide-body">
+            <div class="history-track">
+              <div class="history-step"><span>1956</span><p>A talidomida começou a ser comercializada na Alemanha, principalmente como sedativo; também foi indicada para enjoos.</p></div>
+              <div class="history-step"><span>1959—1961</span><p>Relatos de malformações congênitas foram associados ao uso do medicamento durante a gravidez.</p></div>
+              <div class="history-step"><span>1961—1963</span><p>O medicamento foi retirado do mercado em diversos países. A tragédia impulsionou mudanças em pesquisas, controle e vigilância de medicamentos.</p></div>
+            </div>
+            <div class="thalidomide-fact">
+              <p class="mini-index">O QUE A QUIRALIDADE EXPLICA</p>
+              <p>O Ministério da Saúde descreve a forma R(+) associada a propriedades sedativas e a forma S(−) associada a efeitos imunomoduladores e teratogênicos.</p>
+              <div class="interconversion" aria-label="As formas R e S da talidomida podem se interconverter no organismo">
+                <div><strong>R(+)</strong><span>uma configuração</span></div>
+                <span class="conversion-arrow" aria-hidden="true">⇌</span>
+                <div><strong>S(−)</strong><span>configuração espelhada</span></div>
+              </div>
+              <p class="critical-correction"><strong>Ressalva científica indispensável:</strong> em condições fisiológicas, as formas R e S da talidomida se interconvertem rapidamente. Portanto, não se pode concluir que isolar apenas a forma R eliminaria o risco teratogênico. A distinção entre os enantiômeros ajuda a explicar a estereosseletividade, mas não oferece uma versão simplesmente “segura” do fármaco.</p>
+            </div>
+          </div>
+          <div class="thalidomide-footer"><span>CONSEQUÊNCIA REGULATÓRIA</span><p>Hoje, a talidomida é submetida a controles rigorosos. No Brasil, a Lei nº 10.651/2003 e a RDC ANVISA nº 11/2011 estabelecem regras específicas de prescrição, dispensação, orientação e fiscalização. Seu uso é proibido durante a gestação.</p><a href="#ref-lei-talidomida" class="text-link">Ver legislação e orientações oficiais <span aria-hidden="true">↗</span></a></div>
+        </div>
+
+        <div class="ibuprofen-panel">
+          <div class="ibuprofen-heading">
+            <span class="case-tag">MEDICAMENTO DO COTIDIANO</span>
+            <h3>Ibuprofeno: nem todo enantiômero tem a mesma função.</h3>
+            <p>O ibuprofeno é comercializado com frequência como mistura racêmica. A atividade anti-inflamatória está principalmente associada ao enantiômero (S).</p>
+          </div>
+          <div class="ibuprofen-data">
+            <div class="enantiomer-box"><span class="enantiomer-letter">S</span><div><strong>(S)-ibuprofeno</strong><p>Enantiômero com maior interesse terapêutico para a ação anti-inflamatória.</p></div></div>
+            <div class="enantiomer-box"><span class="enantiomer-letter">R</span><div><strong>(R)-ibuprofeno</strong><p>Parte dele sofre inversão quiral no organismo, formando o enantiômero (S).</p></div></div>
+            <div class="conversion-fact"><strong>57—71%</strong><span>faixa de inversão de R para S citada no material técnico da Universidade do Porto publicado no repositório educacional da IUPAC.</span></div>
+          </div>
+          <p class="ibuprofen-footnote">A porcentagem é uma faixa relatada no material de referência citado; não deve ser interpretada como valor idêntico para todas as pessoas, doses ou condições clínicas. O conteúdo é educativo e não orienta automedicação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="axis-section aroma-section" id="aromas" aria-labelledby="aromas-title">
+      <div class="section-shell">
+        <div class="axis-heading">
+          <p class="eyebrow">04 / EIXO 3</p>
+          <span class="axis-number">03</span>
+          <h2 id="aromas-title">O nariz também reconhece a geometria.</h2>
+          <p>Moléculas quirais podem interagir de maneiras distintas com receptores olfativos. É por isso que dois enantiômeros de uma substância podem ser percebidos com odores diferentes.</p>
+        </div>
+
+        <div class="scent-grid">
+          <article class="scent-card scent-limonene">
+            <div class="scent-card-head"><span>01 / LIMONENO</span><span class="scent-orbit" aria-hidden="true">◉</span></div>
+            <h3>Uma molécula, notas cítricas diferentes.</h3>
+            <figure class="scent-molecule science-figure">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Limonene-3D-balls.png" alt="Modelo tridimensional do limoneno em bolas e varetas, com o anel carbônico e a cadeia lateral visíveis." width="630" height="1100" loading="lazy" decoding="async">
+              <figcaption>Modelo tridimensional do limoneno. Ben Mills e Jynto / Wikimedia Commons (domínio público). <a href="https://commons.wikimedia.org/wiki/File:Limonene-3D-balls.png" target="_blank" rel="noopener noreferrer">Ver origem ↗</a></figcaption>
+              <button class="zoom-image-btn" type="button" data-image-viewer="https://upload.wikimedia.org/wikipedia/commons/e/e5/Limonene-3D-balls.png" data-image-alt="Modelo 3D da molécula de limoneno." data-image-caption="Limoneno — modelo de bolas e varetas. Ben Mills e Jynto / Wikimedia Commons.">Ampliar modelo <span aria-hidden="true">↗</span></button>
+            </figure>
+            <div class="scent-pair">
+              <div class="scent-profile">
+                <span class="scent-sign">(+)</span>
+                <strong>D-(+)-limoneno</strong>
+                <p>Odor característico de laranja e cítricos frescos.</p>
+                <span class="scent-note">LARANJA</span>
+              </div>
+              <div class="scent-profile">
+                <span class="scent-sign">(−)</span>
+                <strong>L-(−)-limoneno</strong>
+                <p>Odor descrito como limão, com nota semelhante à terebintina.</p>
+                <span class="scent-note">LIMÃO</span>
+              </div>
+            </div>
+            <p class="scent-source-note">A literatura consultada também relata o isolamento dos dois enantiômeros na hortelã-pimenta (<em>Mentha × piperita</em>). As letras D/L são convenções de nomenclatura e não devem ser confundidas com (+)/(−) em outros compostos.</p>
+          </article>
+
+          <article class="scent-card scent-carvone">
+            <div class="scent-card-head"><span>02 / CARVONA</span><span class="scent-orbit" aria-hidden="true">◉</span></div>
+            <h3>O contraste entre hortelã e cominho.</h3>
+            <figure class="scent-molecule science-figure">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/%28R%29-%28%E2%88%92%29-carvone-from-xtal-3D-vdW-B.png" alt="Modelo tridimensional de preenchimento espacial do enantiômero R, negativo, da carvona; a representação foi construída com dados cristalográficos de raios X." width="1100" height="1034" loading="lazy" decoding="async">
+              <figcaption>Modelo cristalográfico 3D de um enantiômero da carvona. Ben Mills / Wikimedia Commons (domínio público). <a href="https://commons.wikimedia.org/wiki/File:%28R%29-%28%E2%88%92%29-carvone-from-xtal-3D-vdW-B.png" target="_blank" rel="noopener noreferrer">Ver origem ↗</a></figcaption>
+              <button class="zoom-image-btn" type="button" data-image-viewer="https://upload.wikimedia.org/wikipedia/commons/2/2f/%28R%29-%28%E2%88%92%29-carvone-from-xtal-3D-vdW-B.png" data-image-alt="Modelo tridimensional cristalográfico da carvona." data-image-caption="Carvona — modelo de preenchimento espacial baseado em dados cristalográficos. Ben Mills / Wikimedia Commons.">Ampliar modelo <span aria-hidden="true">↗</span></button>
+            </figure>
+            <div class="carvone-visual" aria-label="Dois perfis olfativos da carvona">
+              <div class="plant-profile"><span class="plant-mark mint-mark" aria-hidden="true">✳</span><div><strong>(−)-carvona</strong><p>Hortelã / menta</p><small>Presente em espécies de hortelã, como Mentha spicata.</small></div></div>
+              <div class="plant-profile"><span class="plant-mark cumin-mark" aria-hidden="true">✳</span><div><strong>(+)-carvona</strong><p>Cominho / alcarávia</p><small>Associada ao aroma característico de sementes de cominho e alcarávia.</small></div></div>
+            </div>
+            <p class="scent-source-note">Os enantiômeros da carvona demonstram como receptores olfativos distinguem configurações espaciais. A associação descrita é a dos odores característicos, não uma afirmação de que cada planta contenha exclusivamente uma única substância.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="conclusion-section" aria-labelledby="conclusion-title">
+      <div class="section-shell conclusion-inner">
+        <p class="eyebrow">05 / SÍNTESE CRÍTICA</p>
+        <h2 id="conclusion-title">Por que a indústria precisa controlar a forma?</h2>
+        <div class="conclusion-grid">
+          <p class="conclusion-lead">Produzir o estereoisômero desejado exige controlar como as moléculas são formadas, separadas, identificadas e mantidas estáveis.</p>
+          <div class="conclusion-text">
+            <p>Uma <strong>mistura racêmica</strong> contém quantidades iguais de dois enantiômeros. Suas rotações ópticas se compensam, de modo que a mistura não apresenta rotação óptica líquida. Isso não significa que os efeitos biológicos dos dois componentes se anulem.</p>
+            <p>Para obter um enantiômero com alta pureza, a indústria pode precisar de síntese assimétrica, separações especializadas, análises de qualidade e controle de cada etapa. Esses processos aumentam a complexidade técnica e o custo. A escolha de produzir uma mistura ou um enantiômero isolado depende das evidências de eficácia, segurança, estabilidade e viabilidade do produto.</p>
+          </div>
+        </div>
+        <div class="conclusion-footer"><span>IDEIA-CHAVE</span><strong>Na química, a fórmula molecular não conta a história inteira. A orientação espacial também importa.</strong></div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+      <div class="section-shell quiz-shell">
+        <div class="quiz-intro">
+          <p class="eyebrow eyebrow-dark">06 / VERIFICAÇÃO DE APRENDIZAGEM</p>
+          <h2 id="quiz-title">Teste sua leitura molecular.</h2>
+          <p>Responda às questões com base nas informações deste dossiê. Cada resposta traz uma explicação para consolidar o conceito.</p>
+          <div class="quiz-metadata"><span>05 QUESTÕES</span><span>RESPOSTA COMENTADA</span></div>
+        </div>
+        <div class="quiz-card" id="quiz-app" aria-live="polite" aria-atomic="true">
+          <div class="quiz-status"><span id="quiz-progress-label">QUESTÃO 01 / 05</span><span id="quiz-score-label">ACERTOS: 0</span></div>
+          <div class="progress-track" aria-hidden="true"><span id="quiz-progress-bar"></span></div>
+          <div id="quiz-content">
+            <h3>Carregando a primeira questão…</h3>
+            <p>Ative o JavaScript para iniciar o questionário.</p>
+          </div>
+          <div class="quiz-controls" id="quiz-controls">
+            <button class="quiz-next" id="quiz-next" type="button" disabled>Próxima questão <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <noscript><p class="noscript-message">O questionário precisa de JavaScript para registrar as respostas. O restante do conteúdo científico permanece disponível sem JavaScript.</p></noscript>
+      </div>
+    </section>
+
+    <section class="architecture-section section-shell" aria-labelledby="architecture-title">
+      <div class="section-heading architecture-heading">
+        <div><p class="eyebrow eyebrow-dark">07 / ARQUITETURA DO PROJETO</p><h2 id="architecture-title">Três arquivos. Responsabilidades separadas.</h2></div>
+        <p class="section-intro">A implementação segue a separação de responsabilidades: o HTML descreve o conteúdo, o CSS controla a apresentação e o JavaScript gerencia a interação do quiz.</p>
+      </div>
+      <div class="architecture-map">
+        <article class="file-card"><span class="file-type">ESTRUTURA</span><h3><span class="file-icon">&lt;/&gt;</span> index.html</h3><p>Define idioma, metadados, cabeçalho, navegação, seções de conteúdo, diagramas SVG, referências e pontos de entrada da interação.</p><ul><li>HTML semântico</li><li>Hierarquia de títulos</li><li>Links e referências</li><li>ARIA onde necessário</li></ul></article>
+        <article class="file-card"><span class="file-type">APRESENTAÇÃO</span><h3><span class="file-icon">#</span> style.css</h3><p>Centraliza identidade visual, cores, tipografia, diagramação, componentes, estados de foco e ajustes para diferentes telas.</p><ul><li>Variáveis de design</li><li>Grid e Flexbox</li><li>Responsividade</li><li>Foco e movimento reduzido</li></ul></article>
+        <article class="file-card"><span class="file-type">COMPORTAMENTO</span><h3><span class="file-icon">{ }</span> script.js</h3><p>Guarda as questões, apresenta alternativas, valida a resposta escolhida, calcula a pontuação e mostra comentários educativos.</p><ul><li>Dados do quiz</li><li>Eventos de clique</li><li>Estado da questão</li><li>Feedback acessível</li></ul></article>
+      </div>
+      <div class="method-note"><strong>Acessibilidade:</strong> a página utiliza regiões semânticas, link para pular ao conteúdo, hierarquia de títulos, foco visível e feedback do quiz anunciado por tecnologia assistiva. Esses recursos favorecem o uso com teclado e leitores de tela, incluindo NVDA; a validação final deve ser feita com testes reais em navegador e NVDA. <br><br><strong>Referência de aprendizagem e implementação:</strong> a organização progressiva — compreender a estrutura, aplicar a estilização, adicionar interação e testar o resultado — dialoga com a abordagem prática e passo a passo apresentada nos materiais oficiais do Curso em Vídeo, de Gustavo Guanabara. A organização do projeto é uma adaptação para esta atividade, não uma reprodução de código do curso. <a href="#ref-guanabara">Consultar referências do Curso em Vídeo.</a></div>
+    </section>
+
+    <section class="references-section" aria-labelledby="references-title">
+      <div class="section-shell">
+        <div class="section-heading references-heading">
+          <div><p class="eyebrow">08 / RASTREABILIDADE CIENTÍFICA</p><h2 id="references-title">Fontes e referências consultadas.</h2></div>
+          <p class="section-intro">Referências institucionais, acadêmicas e educacionais relacionadas diretamente aos conceitos e casos apresentados. Acesso em 20 nov. 2026.</p>
+        </div>
+
+        <ol class="reference-list">
+          <li id="ref-anvisa-gorduras"><span class="ref-number">01</span><div><strong>BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA).</strong><em>Requisitos para uso de gorduras trans industriais em alimentos: perguntas e respostas.</em> 4. ed. Brasília, 13 maio 2024. Base normativa: RDC nº 632/2022.<a href="https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/alimentos/perguntas-e-respostas-arquivos/gorduras-trans-industriais.pdf/%40%40download/file" target="_blank" rel="noopener noreferrer">Abrir documento oficial (PDF) ↗</a></div></li>
+          <li id="ref-talidomida-ms"><span class="ref-number">02</span><div><strong>BRASIL. Ministério da Saúde.</strong><em>Talidomida: orientações para profissionais de saúde.</em> Brasília: Ministério da Saúde, 2022. ISBN 978-65-5993-238-2.<a href="https://bvsms.saude.gov.br/bvs/publicacoes/talidomida_orientacoes_profissionais_saude.pdf" target="_blank" rel="noopener noreferrer">Abrir publicação oficial (PDF) ↗</a></div></li>
+          <li id="ref-anvisa-talidomida"><span class="ref-number">03</span><div><strong>BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA).</strong><em>Síndrome da talidomida fetal — histórico.</em> Página institucional com histórico da comercialização, ausência de testes de teratogenicidade e consequências regulatórias.<a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/talidomida/historico" target="_blank" rel="noopener noreferrer">Consultar histórico da ANVISA ↗</a></div></li>
+          <li id="ref-lei-talidomida"><span class="ref-number">04</span><div><strong>BRASIL.</strong><em>Lei nº 10.651, de 16 de abril de 2003.</em> Dispõe sobre o controle do uso da talidomida.<a href="https://www.planalto.gov.br/ccivil_03/leis/2003/l10.651.htm" target="_blank" rel="noopener noreferrer">Ler texto da lei no Planalto ↗</a></div></li>
+          <li id="ref-anvisa-rdc-talidomida"><span class="ref-number">05</span><div><strong>BRASIL. Agência Nacional de Vigilância Sanitária (ANVISA).</strong><em>RDC nº 11, de 22 de março de 2011.</em> Dispõe sobre o controle da substância talidomida e do medicamento que a contenha.<a href="https://saude.rs.gov.br/upload/arquivos/201701/18151428-1343318376-resolucao-rdc-n-11-de-22-de-marco-de-2011.pdf" target="_blank" rel="noopener noreferrer">Consultar texto da RDC ↗</a></div></li>
+          <li id="ref-ibuprofeno"><span class="ref-number">06</span><div><strong>PINTO, Madalena M. M.; CIDADE, Honorina M. M.</strong><em>Análise do ibuprofeno racémico e (S)-ibuprofeno por formação de derivados diastereoisoméricos.</em> Laboratório de Química Orgânica, Faculdade de Farmácia, Universidade do Porto. Material didático disponibilizado no repositório de Química Medicinal da IUPAC, 2007.<a href="https://publications.iupac.org/cd/medicinal_chemistry/Practica-I-10.pdf" target="_blank" rel="noopener noreferrer">Abrir material técnico (PDF) ↗</a></div></li>
+          <li id="ref-ufpb"><span class="ref-number">07</span><div><strong>SALGADO, Paula Regina Rodrigues.</strong><em>Estereoisômeros da epóxi-carvona com atividade anticonvulsivante: um estudo comparativo.</em> Tese (Doutorado em Desenvolvimento e Inovação Tecnológica em Medicamentos) — Universidade Federal da Paraíba, João Pessoa, 2016. Consultada para os dados de limoneno, carvona e percepção olfativa.<a href="https://repositorio.ufpb.br/jspui/bitstream/tede/8268/2/arquivototal.pdf" target="_blank" rel="noopener noreferrer">Consultar tese no repositório da UFPB (PDF) ↗</a></div></li>
+          <li id="ref-unifesspa"><span class="ref-number">08</span><div><strong>UNIVERSIDADE FEDERAL DO SUL E SUDESTE DO PARÁ (UNIFESSPA). Faculdade de Química.</strong><em>Isomeria: montando isômeros.</em> Material didático do Programa Institucional de Bolsa de Iniciação à Docência (PIBID).<a href="https://faquim.unifesspa.edu.br/images/Experimentoteca/Isomeria.pdf" target="_blank" rel="noopener noreferrer">Abrir material acadêmico (PDF) ↗</a></div></li>
+          <li id="ref-guanabara"><span class="ref-number">09</span><div><strong>GUANABARA, Gustavo. Curso em Vídeo.</strong><em>HTML5 [40 horas].</em> Curso oficial: estrutura HTML, CSS3, introdução a JavaScript, exemplos práticos, exercícios e criação progressiva de um site.<a href="https://www.cursoemvideo.com/curso/html5/" target="_blank" rel="noopener noreferrer">Acessar o curso oficial ↗</a></div></li>
+          <li><span class="ref-number">10</span><div><strong>GUANABARA, Gustavo.</strong><em>Repositório público do professor Gustavo Guanabara.</em> Materiais das aulas, PDFs, códigos, exercícios e desafios de HTML5/CSS3 e JavaScript.<a href="https://gustavoguanabara.github.io/" target="_blank" rel="noopener noreferrer">Acessar repositório de aulas ↗</a></div></li>
+          <li><span class="ref-number">11</span><div><strong>WIKIMEDIA COMMONS.</strong><em>Discovery science.png.</em> Logotipo do Discovery Science, arquivo disponibilizado no repositório Wikimedia Commons; imagem usada como referência visual de identidade. <a href="https://commons.wikimedia.org/wiki/File:Discovery_science.png" target="_blank" rel="noopener noreferrer">Consultar página do arquivo e informações de uso ↗</a></div></li>
+          <li id="ref-ufrgs"><span class="ref-number">12</span><div><strong>LONGHI, Rafael.</strong><em>Efeito dos ácidos graxos trans sob marcadores inflamatórios, bioquímicos, comportamentais e do sistema nervoso central em ratos adultos Wistar.</em> Tese (Doutorado em Ciências Biológicas: Bioquímica) — Universidade Federal do Rio Grande do Sul, Porto Alegre, 2016. Consultada para os efeitos metabólicos e as vantagens tecnológicas historicamente associadas à gordura parcialmente hidrogenada.<a href="https://www.lume.ufrgs.br/bitstream/handle/10183/143593/000996618.pdf" target="_blank" rel="noopener noreferrer">Consultar tese no repositório da UFRGS (PDF) ↗</a></div></li>
+          <li><span class="ref-number">13</span><div><strong>EMBRAPA. Agência de Informação Tecnológica.</strong><em>Composição dos óleos vegetais.</em> Portal Ageitec. Dados de composição de ácidos graxos e exemplos de ocorrência das configurações cis e trans.<a href="https://www.embrapa.br/web/agencia-de-informacao-tecnologica/tematicas/tecnologia-de-alimentos/processos/grupos-de-alimentos/oleaginosas/composicao" target="_blank" rel="noopener noreferrer">Consultar material técnico da Embrapa ↗</a></div></li>
+          <li><span class="ref-number">14</span><div><strong>FERREIRA, Victor Ricardo. Mundo Educação.</strong><em>Isomeria espacial.</em> Texto educacional consultado para revisão dos conceitos cis/trans e ópticos; a imagem dos ácidos oleico e elaídico também é creditada a esta página.<a href="https://mundoeducacao.uol.com.br/quimica/isomeria-espacial.htm" target="_blank" rel="noopener noreferrer">Consultar artigo e imagem ↗</a></div></li>
+          <li><span class="ref-number">15</span><div><strong>WIKIMEDIA COMMONS. Jynto.</strong><em>S-Thalidomide-3D-balls.png.</em> Modelo molecular tridimensional da S-talidomida; arquivo disponibilizado sob CC0 1.0.<a href="https://commons.wikimedia.org/wiki/File:S-Thalidomide-3D-balls.png" target="_blank" rel="noopener noreferrer">Consultar arquivo e licença ↗</a></div></li>
+          <li><span class="ref-number">16</span><div><strong>WIKIMEDIA COMMONS. Ben Mills; Jynto.</strong><em>Limonene-3D-balls.png.</em> Modelo de bolas e varetas da molécula de limoneno; arquivo em domínio público.<a href="https://commons.wikimedia.org/wiki/File:Limonene-3D-balls.png" target="_blank" rel="noopener noreferrer">Consultar arquivo e licença ↗</a></div></li>
+          <li><span class="ref-number">17</span><div><strong>WIKIMEDIA COMMONS. Ben Mills.</strong><em>(R)-(−)-carvone-from-xtal-3D-vdW-B.png.</em> Modelo de preenchimento espacial da carvona, baseado em dados cristalográficos; arquivo em domínio público.<a href="https://commons.wikimedia.org/wiki/File:%28R%29-%28%E2%88%92%29-carvone-from-xtal-3D-vdW-B.png" target="_blank" rel="noopener noreferrer">Consultar arquivo e licença ↗</a></div></li>
+        </ol>
+        <p class="reference-disclaimer">As informações científicas foram sintetizadas a partir das fontes indicadas. A marca Discovery Science pertence aos seus respectivos titulares; este trabalho escolar não é afiliado nem patrocinado pelo canal.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-dialog-title">
+    <div class="image-dialog-panel">
+      <div class="image-dialog-toolbar">
+        <p id="image-dialog-title">Visualização ampliada</p>
+        <button type="button" id="image-dialog-close" class="image-dialog-close" aria-label="Fechar imagem">×</button>
+      </div>
+      <img id="image-dialog-image" src="" alt="Imagem científica ampliada">
+      <p id="image-dialog-caption" class="image-dialog-caption"></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <div><span class="footer-kicker">DOSSIÊ DE QUÍMICA · ISOMERIA ESPACIAL</span><strong>Arthur Santos Lopes</strong><span>E.E.E.M. Willy Carlos Fröhlich · Turma 302</span></div>
+      <a href="#inicio">Voltar ao início ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
